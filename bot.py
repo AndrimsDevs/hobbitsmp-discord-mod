@@ -19,9 +19,16 @@ def notifDiscord(wordToRaise, messageAuthor, messageLink):
     # Define the webhook URL and payload data
     webhook_url = "https://discord.com/api/webhooks/1089343268782882956/k7FwrQirM_BP_WSAxwStVMnGGa44LHgnJUV3uBj92nfHJq0xCLoNXCy0yBdbxDUUqAyt"
     payload = {
-        "content": "%s has said %s in %s"%(messageAuthor, wordToRaise, messageLink),
+        "content": "Flag Inbound",
         "username": "Owner Word Flagging",
-        "avatar_url": "https://my-bot-avatar-image-url.com/avatar.png"
+        "avatar_url": "https://my-bot-avatar-image-url.com/avatar.png",
+        "embeds": [
+            {
+                "title": "flag ig",
+                "description": "test",
+                "color": 16711680, # RGB color code (decimal) - red in this example
+            }
+        ]
     }
 
     # Send the webhook using the requests library
