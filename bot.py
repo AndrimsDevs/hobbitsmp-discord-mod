@@ -23,7 +23,7 @@ def raiseFlag(wordToRaise, messageAuthor, messageLink):
     payload = {
         "content": "Flag Inbound",
         "username": "Owner Banned Word Flagging",
-        "avatar_url": "https://my-bot-avatar-image-url.com/avatar.png",
+        "avatar_url": "https://cdn.discordapp.com/attachments/982416332685471764/1089394190166794372/hobbits2_logo.png",
         "embeds": [
             {
                 "title": "flag ig",
