@@ -65,6 +65,8 @@ class MyClient(discord.Client):
                 # break out of loop to avoid multiple flags for multiple flags within one msg
                 break
 
+# file logging system, to save console records to an s3 bucket with .log file exts
+
 # run bot with declared intents
 client = MyClient(intents=intents)
 client.run('YOUR TOKEN HERE')
